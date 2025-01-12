@@ -1,0 +1,106 @@
+
+::selection {
+    color: white;
+    background-color: grey;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.body {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+}
+
+.title {
+    position: relative;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: wheat 0 0 30px;
+    background-color: transparent;
+}
+
+.subtitle {
+    position: relative;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: wheat 0 0 30px;
+    background-color: transparent;
+}
+
+.container {
+    background-color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    border-color: grey;
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 40px;
+    max-width: 240;
+    height: 210px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 2px;
+    overflow: none;
+    text-wrap: none;
+    box-shadow: wheat 0 0 1000px;
+}
+
+.Inputs {
+    margin-right: 30;
+    font-weight: 600;
+    color: grey;
+    padding-top: 10;
+    letter-spacing: 0.1;
+    text-align: right;
+    background-color: transparent;
+}
+
+.numInput {
+    border: solid 3px;
+    border-radius: 1rem;
+    width: 70;
+    text-align: center;
+    border-color: grey;
+    color: grey;
+    background-color: transparent;
+}
+
+.numInput:focus {
+    outline: none;
+}
+
+.result {
+    padding-top: 10;
+    text-align: center;
+    background-color: transparent;
+}
+.number {
+    text-align: center;
+    font-size: 70;
+    margin-top: -15;
+    background-color: transparent;
+}
+
+canvas.dots {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    z-index: -10;
+}
