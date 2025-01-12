@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas class="dots"></canvas>
+    <div class="title">GPA Goal Calculator</div>
+    <div class="subtitle">Calculates amount of A credit needed to achieve a target GPA.<br> IMPORTANT: unweighted GPA only</div>
+    <div class="container">
+        <div class="Inputs">
+            GPA :
+            <input type="number" class="numInput" id="num" oninput="getInputValues()"> <br>
+            CREDITS:
+            <input type="number" class="numInput" id="credit" oninput="getInputValues()"> <br>
+            TARGET GPA: 
+            <input type="number" class="numInput" id="target" oninput="getInputValues()"> <br>
+        </div>
+
+        <div class="result">
+            CREDITS NEEDED:
+        </div>
+        <div class="number" id="result">
+            0
+        </div>
+    </div><div class="subtitle">1. Enter current GPA in top input box <br> 2. Enter current credits in middle input box <br> 3. Enter your target GPA in bottom input box <br> <br> Credits needed is the amount of credits of an A or 90+ grade required to reach your target GPA.</div>
+    <script src="calculate.js"></script>
+    <script src="dots.js"></script>
+</body>
+</html>
