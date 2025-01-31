@@ -1,4 +1,6 @@
 let previousResult = 0; 
+let result = 0;
+var resultElement = document.getElementById("result");
 
 function getInputValues() {
     var num = parseFloat(document.getElementById("num").value);
@@ -17,14 +19,13 @@ function calculateResult(num, credit, target) {
     else 
         targett = target;
 
-    var result = (((num * credit) - (targett * credit)) / (targett - 4));
+    result = (((num * credit) - (targett * credit)) / (targett - 4));
     if (isNaN(result)) 
         result = 0;
     if (result < 0)
         result = 0;
     result = roundUpToNearestHalf(result);
-    
-    var resultElement = document.getElementById("result");
+
     animateResult(resultElement, previousResult, result, 200);
     previousResult = result;
 }
@@ -44,4 +45,13 @@ function animateResult(obj, start, end, duration) {
             window.requestAnimationFrame(step);
     };
     window.requestAnimationFrame(step);
+    goodOrBad(end);
+}
+
+function goodOrBad(result) {
+    if (result < 10) {
+        resultElement.style.color = "green";
+    } else {
+        resultElement.style.color = "red";
+    }
 }
